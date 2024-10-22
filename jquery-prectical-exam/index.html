@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prectial Exam</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css ">
+</head>
+<body>
+
+      <div class="cursor"></div>
+      <div class="cursor2"></div>
+    <main>
+        <header>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="logo">
+                       <a href="index.html"> <img src="img/pngwing.com.png" alt="logo" title="logo" class="img-fluid"></a>
+                    </div>
+                   <div class="navigation ">
+                    <a href="javascript:void(0)" class="toggle-button d-block display-md-block">=</a>
+                    <div class="menu">
+                        <nav class="direction-md-col display-md-none">
+                            <ul class="display-lg-flex">
+                                    <li><a href="javascript:void(0)">Home</a></li>
+                                    <li><a href="javascript:void(0)">About Us</a></li>
+                                    <li><a href="javascript:void(0)">Servies</a></li>
+                                    <li><a href="javascript:void(0)">FAQ</a></li>
+                                    <li><a href="javascript:void(0)">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                   </div>
+                </div>
+            </div>
+        </header>
+       
+        <section class="banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-lg-12">
+                        <div class="banner-img">
+                            <img src="img/banner-img.jpg" alt="banner" title="banner" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-12
+                    ">
+                        <div class="banner-content">
+                            <h1 class="cd-headline letters type">
+                                <span>We are </span> 
+                                <span class="cd-words-wrapper waiting">
+                                    <b class="is-visible">Devlopwers</b>
+                                    <b>Designer</b>
+                                </span>
+                            </h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nesciunt labore eum ratione ex neque saepe vitae, laboriosam, ab consequuntur expedita exercitationem dolorum. Commodi adipisci dicta quos iste dolorum fuga dignissimos accusantium et, voluptas iure quam impedit est ratione libero corporis, blanditiis molestias autem porro esse distinctio modi. Dicta ea odit tenetur a sint eos. Tenetur rerum, cumque veniam impedit necessitatibus, obcaecati ullam repudiandae blanditiis modi eligendi eius error molestias dicta facere deleniti, minus consequuntur natus delectus quibusdam a nam. Esse, praesentium eum. Corrupti est doloribus labore atque a deleniti possimus, quaerat, iure id tempore ipsam eligendi, accusamus laudantium itaque.</p>
+                            <a href="javascript:void(0)"> Join Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+       <div class="container">
+        <div class="accordian">
+            <div class="dropdawn">
+                <a href="javascript:void(0)" class="slide"> Accordian 1</a>
+                <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolor fugiat adipisci ducimus sit? Minus sapiente cumque doloremque repudiandae sed temporibus qui mollitia rerum aut in natus perferendis tempore magni fugiat eum distinctio aliquam debitis, sit reiciendis magnam nihil voluptas nemo velit nulla. Ratione in quae officiis, facilis optio veniam.                    
+                </p>
+            </div>
+            <div class="dropdawn">
+                <a href="javascript:void(0)" class="slide"> Accordian 1</a>
+                <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolor fugiat adipisci ducimus sit? Minus sapiente cumque doloremque repudiandae sed temporibus qui mollitia rerum aut in natus perferendis tempore magni fugiat eum distinctio aliquam debitis, sit reiciendis magnam nihil voluptas nemo velit nulla. Ratione in quae officiis, facilis optio veniam.                    
+                </p>
+            </div>
+            <div class="dropdawn">
+                <a href="javascript:void(0)" class="slide"> Accordian 1</a>
+                <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolor fugiat adipisci ducimus sit? Minus sapiente cumque doloremque repudiandae sed temporibus qui mollitia rerum aut in natus perferendis tempore magni fugiat eum distinctio aliquam debitis, sit reiciendis magnam nihil voluptas nemo velit nulla. Ratione in quae officiis, facilis optio veniam.                    
+                </p>
+            </div>
+            <div class="dropdawn">
+                <a href="javascript:void(0)" class="slide"> Accordian 1</a>
+                <p class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolor fugiat adipisci ducimus sit? Minus sapiente cumque doloremque repudiandae sed temporibus qui mollitia rerum aut in natus perferendis tempore magni fugiat eum distinctio aliquam debitis, sit reiciendis magnam nihil voluptas nemo velit nulla. Ratione in quae officiis, facilis optio veniam.                    
+                </p>
+            </div>
+        </div>
+       </div>
+
+    </main>
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/headline.js"></script>
+    <script src="js/cursor.js"></script>
+    <script>
+        $(".slide").click(function(){
+            $(this).parent(".dropdawn").find(".answer").slideToggle();
+            $(this).parent(".dropdawn").prevAll(".dropdawn").find(".answer").slideUp();
+            $(this).parent(".dropdawn").nextAll(".dropdawn").find(".answer").slideUp();
+        });
+        $(".toggle-button").click(function(){
+            $("nav").slideToggle();
+        });
+    </script>
+
+</body>
+</html>
